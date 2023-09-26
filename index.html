@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Studio</title>
+</head>
+
+<body class="bg-white">
+    <!-- header -->
+    <div id="navbar"
+        class="absolute min-h-screen min-w-full z-10 transition-all md:min-h-fit md:flex md:flex-row md:items-center md:justify-between md:px-[10%] md:pt-5">
+        <a href="#"
+            class="font-alata absolute z-10 left-5 top-5 text-white text-2xl font-bold md:static hover:cursor-pointer md:text-3xl">loopstudious</a>
+        <img src="./images/icon-hamburger.svg" alt="nav button" id="navbtn"
+            class="absolute right-8 z-10 top-8 md:hidden">
+
+        <ul id="navitems"
+            class="hidden flex flex-col absolute top-40 left-0 w-full h-full z-10 text-white text-3xl font-thin md:flex md:flex-row md:h-fit md:w-fit md:text-xl md:static">
+            <li class="group font-josefin text-slate-300 ml-5 mt-4 md:text-white md:font-alata">
+                <a href="#" class="group-hover:cursor-pointer ">About</a>
+                <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+            </li>
+            <li class="group font-josefin text-slate-300 ml-5 mt-4 md:text-white md:font-alata">
+                <a href="#" class="group-hover:cursor-pointer">Careers</a>
+                <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+            </li>
+            <li class="group font-josefin text-slate-300 ml-5 mt-4 md:text-white md:font-alata">
+                <a href="#" class="group-hover:cursor-pointer">Events</a>
+                <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+            </li>
+            <li class="group font-josefin text-slate-300 ml-5 mt-4 md:text-white md:font-alata">
+                <a href="#" class="group-hover:cursor-pointer">Products</a>
+                <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+            </li>
+            <li class="group font-josefin text-slate-300 ml-5 mt-4 md:text-white md:font-alata">
+                <a href="#" class="group-hover:cursor-pointer">Support</a>
+                <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Carousel -->
+    <picture>
+        <source media="(min-width:1023px )" srcset="./images/desktop/image-hero.jpg">
+        <img src="images/mobile/image-hero.jpg" alt="hero img" class="md:w-screen" />
+    </picture>
+    <div
+        class="absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[20rem] border-2 border-white px-7 py-4 md:w-[40%] md:h-fit md:px-7 md:py-7 lg:px-14 lg:py-11">
+        <h1 id="heroText" class="font-josefin text-4xl tracking-wider leading-10 text-white lg:text-5xl xl:text-6xl">
+            IMMERSIVE EXPERIENCES THAT
+            DELIVER</h1>
+    </div>
+
+    <!-- interactive -->
+    <div id="interactive" class="flex flex-col items-center py-20 lg:flex-row lg:pl-[10%]">
+        <picture class="h-[85%] w-[85%] lg:h-full lg:w-full">
+            <source media="(min-width:1023px)" srcset="images/desktop/image-interactive.jpg" />
+            <img src="images/mobile/image-interactive.jpg" alt="person with vr" class="h-full w-full" />
+        </picture>
+
+        <div id="interactive-text"
+            class="mt-8 bg-white h-[85%] w-[85%] lg:w-full lg:px-16 lg:py-16 lg:relative lg:h-full lg:translate-y-[30%] lg:-translate-x-[15%]">
+            <h2 class="text-center font-josefin text-4xl mb-6 lg:text-left">
+                THE LEADER IN <br />
+                INTERACTIVE VR
+            </h2>
+            <p class="text-center text-slate-400 font-alata lg:text-left lg:w-[80%]">
+                Founded in 2011, Loopstudios has been producing world-class virtual
+                reality projects for some of the best companies around the globe.
+                Our award-winning creations have transformed businesses through
+                digital experiences that bind to their brand.
+            </p>
+        </div>
+    </div>
+
+    <!-- list -->
+    <div id="creaction-sec" class="flex flex-col px-[7%] items-center mb-20 lg:px-[10%]">
+        <div id="creation-title" class="flex flex-row justify-between items-center lg:w-full">
+            <h2 class="font-josefin text-center text-4xl mt-16 mb-10">
+                OUR CREATIONS
+            </h2>
+            <button class="group hover:bg-black hidden border-2 border-black h-fit py-1 px-5 mt-7 lg:block">
+                <span class="group-hover:text-white font-alata tracking-[0.25rem]">SEE ALL</span>
+            </button>
+        </div>
+
+        <div id="creation-con" class="flex flex-col items-center mb-20 lg:w-full lg:grid lg:grid-cols-4 gap-5">
+            <div id="creaction-earth"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-deep-earth.jpg" />
+                    <img src="./images/mobile/image-deep-earth.jpg" alt="earth" class="w-full brightness-[0.8]" />
+                </picture>
+
+                <div class="absolute w-[50%] h-full bottom-2 bg-black/10 lg:w-fit  lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        DEEP <br />
+                        EARTH
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-arcade"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-night-arcade.jpg" />
+                    <img src="images/mobile/image-night-arcade.jpg" alt="arcade" class="w-full brightness-[0.8]" />
+                </picture>
+                <div class="absolute w-[50%] h-full bottom-2 bg-black/30 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        NIGHT <br />
+                        ARCADE
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-soccer"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-soccer-team.jpg" />
+
+                    <img src="images/mobile/image-soccer-team.jpg" alt="soccer team" class="w-full brightness-[0.8]" />
+                </picture>
+                <div class="absolute w-[50%] h-full bottom-7 bg-black/5 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        SOCCER <br />
+                        TEAM VR
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-grid"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-grid.jpg" />
+                    <img src="images/mobile/image-grid.jpg" class="w-full brightness-[0.8]" alt="grid" />
+                </picture>
+                <div class="absolute w-[50%] h-full  bottom-2 bg-black/10 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0  lg:text-3xl group-hover:text-black transition-all">
+                        THE <br />
+                        GRID
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-upAbove"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-from-above.jpg" />
+                    <img src="images/mobile/image-from-above.jpg" alt="upabove" class="w-full brightness-[0.8]" />
+                </picture>
+                <div class="absolute w-[50%] h-full bottom-12 bg-black/10 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        FROM UP <br />
+                        ABOVE VR
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-pocket"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-pocket-borealis.jpg" />
+                    <img src="images/mobile/image-pocket-borealis.jpg" alt="pocket" class="w-full brightness-[0.8]" />
+                </picture>
+                <div class="absolute w-[50%] h-full bottom-2 bg-black/10 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        POCKET <br />
+                        BOREALIS
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-curiosity"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-curiosity.jpg" />
+                    <img src="images/mobile/image-curiosity.jpg" alt="image-curiosity"
+                        class="w-full brightness-[0.8]" />
+                </picture>
+                <div class="absolute w-[50%] h-full bottom-2 bg-black/10 lg:w-fit lg:bg-black/0 lg:h-fit lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        THE <br />
+                        CURIOSITY
+                    </p>
+                </div>
+            </div>
+
+            <div id="creation-fisheye"
+                class="flex flex-col mt-6 h-[100%] w-[100%] relative lg:mt-1 group hover:cursor-pointer">
+                <picture class="group-hover:contrast-50 transition-all">
+                    <source media="(min-width:1023px)" srcset="images/desktop/image-fisheye.jpg" />
+                    <img src="images/mobile/image-fisheye.jpg" alt="fisheye" class="w-full brightness-[0.9]" />
+                </picture>
+                <div class="absolute  w-[50%] h-full bottom-2 bg-black/2 lg:w-fit lg:h-fit lg:bg-black/0 lg:bottom-7">
+                    <p
+                        class="text-white text-xl tracking-[0.2rem] leading-5 pl-5 pt-14 lg:pt-0 lg:text-3xl group-hover:text-black transition-all">
+                        MAKE IT <br />
+                        FISHEYE
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="group border-2 hover:bg-black border-black w-fit py-1 px-7 lg:hidden">
+            <span class="group-hover:text-white font-alata tracking-[0.25rem]">SEE ALL</span>
+        </button>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-black w-full h-full text-white text-center py-10 lg:flex lg:justify-between">
+        <div id=" info" class="lg:flex lg:flex-col lg:text-left lg:ml-[10%]">
+            <h2 class="font-alata text-3xl">loopstudios</h2>
+            <ul class="flex flex-col text-lg text-center my-10 lg:my-5 lg:flex-row lg:gap-5">
+                <li class="font-josefin mt-3 group lg:mt-0">
+                    <a href="#">About</a>
+                    <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                </li>
+                <li class="font-josefin mt-3 group lg:mt-0">
+                    <a href="#">Careers</a>
+                    <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                </li>
+                <li class="font-josefin mt-3 group lg:mt-0">
+                    <a href="#">Event</a>
+                    <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                </li>
+                <li class="font-josefin mt-3 group lg:mt-0">
+                    <a href="#">Products</a>
+                    <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                </li>
+                <li class="font-josefin mt-3 group lg:mt-0">
+                    <a href="#">Support</a>
+                    <div class="w-0 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="socials" class="lg:flex lg:flex-col lg:justify-start lg:items-end lg:mr-[10%]">
+            <ul class="flex flex-row justify-center mb-2 lg:mb-4">
+                <li class="mx-2 group">
+                    <a href="#">
+                        <img src="images/icon-facebook.svg" alt="facebook" />
+                        <div class="w-0 mt-1 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                    </a>
+                </li>
+                <li class="mx-2 group">
+                    <a href="#">
+                        <img src="images/icon-twitter.svg" alt="twitter" />
+                        <div class="w-0 mt-1 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                    </a>
+                </li>
+                <li class="mx-2 group">
+                    <a href="#">
+                        <img src="images/icon-pinterest.svg" alt="pinterest" />
+                        <div class="w-0 mt-1 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                    </a>
+                </li>
+                <li class="mx-2 group">
+                    <a href="#">
+                        <img src="images/icon-instagram.svg" alt="instagram" />
+                        <div class="w-0 mt-1 h-1 bg-white rounded-md group-hover:w-full transition-all"></div>
+                    </a>
+                </li>
+            </ul>
+            <p class="font-alata text-gray-500 lg:mt-2">
+                © 2021 Loopstudios. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
